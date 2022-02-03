@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Making and using digital (critical) editions of Christian texts from antiquity: The Patristic Text Archive (PTA)</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="author" content="Annette von Stockhausen"/>
+    <meta name="description" content="AIEP Youtube Presentation"/>
+    <!-- Serve with: "python -m SimpleHTTPServer 8000" -->
+    <style type="text/css">
+      
+      body {font-family: sans-serif;letter-spacing:0.025em;}
+      h1, h2, h3 {
+        font-family: sans-serif;
+      }
+      .remark-slide-content {background-image: url(img/BBAWlogo.png); background-size: 15%; background-repeat: no-repeat;background-position: 98% 4%; }
+    .remark-slide-content h1 { font-size: 1.5em; text-align: left; color:#ff0033; font-weight: bold; letter-spacing:0.05em;}
+    .remark-slide-content h2 { font-size: 1em;color:#ff0033;font-weight: bold;letter-spacing:0.05em;margin-top:0em;}
+    .remark-slide-content  h3 { font-size: 0.8em;color:#ff0033;font-weight: bold;letter-spacing:0.05em;margin-top:0em;}
+    .remark-slide-content p { font-size: .8em; }
+    .remark-slide-content li { text-align: left; font-size: 100%;}
+    .remark-code, .remark-inline-code { font-family: monospace; }
+    .remark-fading { z-index: 9; } 
+    .remark-slide img { max-height: 420px;max-width:900px;}
+    .remark-slide-container {transition: opacity 0.5s ease-out;opacity: 0;}
+    .remark-visible {transition: opacity 0.5s ease-out;opacity: 1;}
+    .remark-slide-number {
+    bottom: 10px;
+    opacity: 1;
+    color: grey;
+    width: 96%;
+    border-top: 3px solid #ff0033;
+    text-align: right;
+    }
+
+      /* Two-column layout */
+      .left-column {
+        width: 50%;
+        float: left;
+      }
+      .right-column {
+        width: 49%;
+        float: right;
+        padding-top: 0em;
+        margin-top: 0em;
+    }
+
+    .left-column img, .right-column img { max-height: 450px;max-width:400px;}
+    
+    .footnote {  
+    text-align: center;
+    font-size: 50%;
+    }
+       
+    /* Some special classes */
+    .titlepage {display: block;position: relative; width: 100%;}
+    .title {font-family:sans-serif; font-size: 2em; color:#ff0033;font-weight:bold;letter-spacing:0.05em;}
+    .subtitle {font-family: sans-serif; color: #ff0033; font-weight:bold;font-size: 2em; }
+    .author {font-family: sans-serif;font-size: 1.4em; color:#ff0033;font-weight:bold;letter-spacing:0.02em;}  
+    .coauthor {font-family: sans-serif;font-size: 1.0em; color:#ff0033;font-weight:bold;letter-spacing:0.02em;}  
+    .institution {font-family: sans-serif;font-size: 1.0em;font-style: italic;color:#ff0033; }
+    .date {font-family: sans-serif;font-size: 1.0em;font-style: italic;color:#ff0033; }
+    .huge{font-family: sans-serif;font-size: 5.0em;color:#ff0033; }
+    .large{font-family: sans-serif;font-size: 3.5em;color:#ff0033;}
+    .emph{font-family: sans-serif;font-size: 2em;color:#ff0033;}
+    .cite {font-size: 0.8em; color:#ff0033;font-style: italic; }
+    .strike {color:#ff0033;text-decoration:underline; }
+    strong {text-decoration: none;color:#ff0033; }
+    em {text-decoration: none;font-style: italic; }
+    /*Set color scheme for links.*/    
+    a {text-decoration: none;color:#ff0033;opacity:1; }
+    /*Setting link properties is particular, do not change order below*/   
+    a:visited {color:#ff0033;}
+    a:hover {color:#000;}  
+    a:active, a#active {color:#ff0033;} 
+      
+    .blockquote {display: block;text-align:left; position: relative;width: 95%;margin: 20px auto;padding: 5px;font-size:100%; background: rgba(100, 200, 200, 0.05);box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2); }
+    .blockquote p:first-child,.blockquote p:last-child {display: inline-block;}
+    .blockquote p:last-child {font-size: 80%;align:right;}
+    
+    </style>
+  </head>
+  <body>
+        <textarea id="source">
+class: middle, center
+
+.titlepage[.title[Making and using digital (critical) editions of Christian texts from antiquity: The Patristic Text Archive (PTA)]
+
+.author[Dr. Annette von Stockhausen] 
+
+.institution[Berlin-Brandenburg Academy of Sciences and Humanities (Berlin, Germany)] ] 
+
+---
+class: top, left
+
+# Die alexandrinische und antiochenische Bibelexegese in der Spätantike (2011–2032)
+
+The project prepares critical editions of late antique Christian commentaries and homilies. It is part of the collective research programme of the German academies of sciences which serves to study, preserve and communicate global cultural heritage and is coordinated by the [Union of the German Academies of Sciences and Humanities](https://www.akademienunion.de/en).
+
+## Editions  
+- Eusebius of Caeserea, Commentarii in Psalmos
+- Theodoret of Cyrus, Interpretatio in Danielem 
+- Hesychius of Jerusalem, Commentarius magnus in Psalterium and De titulis Psalmorum/Scholia in Psalmos
+- Cyril of Alexandria, De adoratione in cultu et veritate and Glaphyra in Pentateuchum
+- Severian of Gabala, the homilies
+
+More information (in German) at https://bibelexegese.bbaw.de
+
+---
+class: top, left
+
+# The Patristic Text Archive (PTA)
+
+![PTA-logo](img/pta_logo.png)
+
+.emph[https://pta.bbaw.de]
+
+(**!** work-in-progress: not all planned features implemented yet)
+
+
+---
+class: middle, center
+
+# Goals of the PTA
+
+
+---
+class: top, left
+
+# Multiple sources
+
+![](img/PTA-ingest-eng.drawio.svg) 
+
+---
+class: top, left
+
+# Following the [*FAIR principles*](https://www.go-fair.org/fair-principles/)
+
+- **F**indable 
+  - for example: machine-readable metadata
+- **A**ccessible 
+  - for example: Website (https://pta.bbaw.de)
+  - for example: API (https://pta.bbaw.de/api, https://pta.bbaw.de/project/documentation#api-ediarumweb)
+  - for example: data repositories (https://github.com/PatristicTextArchive)
+- **I**nteroperable 
+  - linking with other projects (for example: [Clavis Clavium](https://clavis.brepols.net/clacla/Default.aspx), [Pleiades Gazetter](https://pleiades.stoa.org/))
+  - refering to norm data (for example: [Diktyon-IDs for Greek manuscripts](http://www.diktyon.org/en/))
+  - using normalized vocabulary (for example: [Dublin Core Metadata Initiative](https://dublincore.org/specifications/dublin-core))
+  - using standards (for example: [TEI](https://tei-c.org), [CapiTainS](http://capitains.org/))
+- **R**eusable
+  - Open Access
+
+
+---
+class: middle, center
+
+# strong distinction between *data* and *presentation*
+
+---
+class: top, left
+
+# Data (= “the XML files” or “the edition proper”)
+- data format: XML following the [TEI Guidelines](https://tei-c.org/release/doc/tei-p5-doc/en/html/index.html) 
+- adhering to [edition guidelines](https://pta.bbaw.de/project/encoding-guidelines) (technical: [TEI scheme](https://github.com/PatristicTextArchive/Schema))
+- edition build up from
+  - “diplomatic” transcription of all (manuscript) witnesses
+  - critical (“Lachmannian”) edition
+- documentation of textcritical decisions and editorial process (textcritical “commentary”) 
+- enriched by annotations (biblical quotes, persons, places, …)
+
+## all data available: 
+- https://github.com/PatristicTextArchive/pta_data (texts)
+- https://github.com/PatristicTextArchive/pta_manuscripts (manuscript descriptions)
+- https://github.com/PatristicTextArchive/pta_metadata (metadata)
+- https://github.com/PatristicTextArchive/Schema (edition guidelines)
+
+---
+class: top, left
+
+# Source file for transcription
+
+![](img/Transkription.png)
+
+[Live](https://github.com/PatristicTextArchive/pta_data/blob/public/data/pta0001/pta028/pta0001.pta028.pta-MsMo.xml)
+
+---
+class: top, left
+
+# Source file for edition
+
+![](img/Edition.png)
+
+[Live](https://github.com/PatristicTextArchive/pta_data/blob/public/data/pta0001/pta028/pta0001.pta028.pta-grcBibex.xml)
+
+---
+class: top, left
+
+# Presentation (= “the website”)
+- multiple approaches available
+  - authors and works (texts) 
+  - manuscript descriptions
+  - indices (biblical references, persons, places)
+  - search (texts, metadata)
+- “reader” interface (two-column; to come: access for versions)  
+- visualisation of metadata (sources, identifiers)
+- recommendations for reuse (citation, permalink, versions, license) 
+- visualisation of annotations (variants, references)
+- enrichment of annotations (biblical references, persons, places; using authority files)
+- tools (dictionary, linking [text analytical tools](https://voyant-tools.org/))
+- (embedding of digitized images of manuscripts via IIIF standard)
+
+## Technical implementation
+- [Documentation](https://pta.bbaw.de/project/documentation)
+- programming: Dr. Martin Fechner ([backend, API](https://www.ediarum.org)) and Jan Köster (frontend), BBAW
+
+---
+class: middle, center
+
+# Live demonstration of the PTA
+
+---
+class: top, left
+
+# Beyond presentation (= “use your own or other tools”)
+
+## for example
+
+- using [AntConc](https://www.laurenceanthony.net/software/antconc/) for your analyses
+- using the [Classical Language Toolkit (CLTK)](http://cltk.org/) for building your analyses
+- adding your own annotations
+- do your own conversion to a book, a reader, …
+
+---
+class: middle, center
+
+# Conclusion
+
+---
+class: top, left 
+
+# Obstacles
+- costs
+  - training needed 
+  - time 
+  - effort 
+  - infrastructure
+- citability
+- long time availability
+
+---
+class: top, left 
+
+# Assets
+- worldwide accessability
+- annotations
+- extensive documentation 
+- “accountability” / “reproducibility”
+- versioning (“editions”)
+- openess
+  - multiple approaches and analyses possible
+  - enrichment possible (adding data, linking resources)
+
+.emph[open access *conditio sine qua non*]
+
+.emph[“digital literate user” needed]
+
+---
+class: middle, left
+
+# Contact
+
+annette.von_stockhausen@bbaw.de
+
+https://twitter.com/avstockh 
+
+https://twitter.com/bibelexegese
+
+
+
+	     
+	</textarea>
+    <script src="remark-latest.min.js" type="text/javascript"></script>     
+    <script type="text/javascript"> 
+      var slideshow = remark.create({ratio: '4:3',countIncrementalSlides: false});
+    </script>
+  </body>
+</html>
